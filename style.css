@@ -1,0 +1,303 @@
+:root{
+    --font-family:'Barlow Semi Condensed', sans-serif;
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    --LightLight-gray: hsl(0, 0%, 81%);
+    --Lightgrayish-blue: hsl(210, 46%, 95%);
+    
+}
+body{
+    background-color: var(--LightLight-gray);
+}
+.container{
+    margin: 80px 15px 100px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: var(--White);
+    background-color: var(--LightLight-gray);
+
+}
+
+.card-1{
+    padding: 30px;
+    background-color: var(--Moderate-violet);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    
+    
+}
+.spimg{
+    width: 90px;
+    position: absolute;
+    right:20px;
+    top: 0;
+    
+}
+
+.top-card{
+   
+}
+.img{
+    float: left;
+    
+}
+
+img{
+    
+    border-radius:100px;
+    width: 30px;  
+    
+
+}
+
+.name{
+    
+    color: var(--White);
+    font-size: 13px;
+    font-family: var(--font-family);
+    margin: 0 0 0 50px;
+    max-width: 100px;
+    line-height: 1.3em; 
+}
+.stats{
+    font-size: 11px;
+    color: var(--LightLight-gray);
+}
+
+
+
+
+
+.card-header{
+    
+    margin: 20px 0 0 0;
+    color:var(--White);
+    font-family: var(--font-family);
+    font-size: 20px;
+    text-align: left;
+    line-height: 1.2em;
+}
+
+.card-main{
+    font-family: var(--font-family);
+    color: var(--LightLight-gray);
+    font-size: 12px;
+    margin: 20px 0 0 0;
+    line-height: 1.6em;
+    text-align: left;
+
+}
+
+
+
+
+
+.card-2{
+   
+    border-radius: 10px;
+    padding: 30px;
+    background-color: var(--Very-dark-grayish-blue);
+}
+
+.name2{
+    color: var(--White);
+    font-size: 13px;
+    font-family: var(--font-family);
+    margin: 0 0 0 50px;
+    max-width: 100px;
+    line-height: 1.3em; 
+    
+}
+.stats{
+    font-size: 11px;
+    color: var(--LightLight-gray);
+    
+   
+}
+
+
+
+
+.card-3{
+    
+    border-radius: 10px;
+    padding: 30px;
+    background-color: white;
+
+}
+.name3{
+    color: var(--Very-dark-grayish-blue);
+    font-size: 13px;
+    font-family: var(--font-family);
+    margin: 0 0 0 50px;
+    max-width: 100px;
+    line-height: 1.3em; 
+}
+.stats{
+    font-size: 11px;
+    color: var(--LightLight-gray);
+}
+
+.card-header3{
+    color: var(--Very-dark-grayish-blue);
+    font-family: var(--font-family);
+    font-size: 20px;
+    
+}
+
+
+
+.card-4{
+   
+    background-color: var(--Very-dark-blackish-blue);
+    border-radius: 10px;
+    padding: 30px;
+    
+}
+.name4{
+    color: var(--White);
+    font-size: 13px;
+    font-family: var(--font-family);
+    margin: 0 0 0 50px;
+    max-width: 100px;
+    line-height: 1.3em; 
+}
+.stats{
+    font-size: 11px;
+    color: var(--LightLight-gray);
+}
+
+
+
+.card-5{
+    
+    border-radius: 10px;
+    padding: 30px;
+    background-color: white;
+}
+.name5{
+    color:var(--Very-dark-grayish-blue);
+    font-size: 13px;
+    font-family: var(--font-family);
+    margin: 0 0 0 50px;
+    max-width: 90px;
+    line-height: 1.3em; 
+}
+
+
+.stats{
+    font-size: 11px;
+    color: var(--LightLight-gray);
+}
+
+.card-header5{
+    color:var(--Very-dark-grayish-blue);
+        margin: 10px 0 0 0;
+        font-size: 20px;
+        font-family: var(--font-family)
+}
+
+@media (min-width:900px){
+    .container{
+        margin: 0 auto;
+        margin: 150px 220px 120px 220px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 40px;
+        max-width: 1600px;
+        
+    }
+
+    .spimg{
+        right: 90px;
+        width: 90px;
+
+        
+    }
+    img{
+        
+        border-radius:100px;
+        width: 40px;  
+        
+    
+    }
+
+    .stats{
+        font-size: 15px;
+    }
+
+
+    .card-main{
+       font-size: 20px;
+    
+    }
+    
+
+    .card-1{
+        grid-column:1/3 ;
+    }
+    .name{
+        font-size: 15px;
+        max-width: 120px;
+        margin: 0 0 0 60px;
+    }
+
+    
+    
+
+    .card-2{
+        grid-column: 3;
+    }
+    .name2{
+        font-size: 15px;
+        max-width: 120px;
+        margin: 0 0 0 60px;
+    }
+    
+    .card-header{
+       font-size: 25px;
+    }
+    .card-3{
+        grid-row: 2;
+    }
+    
+    .name3{
+        font-size: 15px;
+        max-width: 120px;
+        margin: 0 0 0 60px;
+    }
+
+    .card-header3{
+        margin: 30px 0 0 0;
+        width:220px;
+        text-align: left;
+    }
+    
+
+    .card-4{
+        grid-column: 2/4;
+        grid-row: 2;
+        
+    }
+    .name4{
+        font-size: 15px;
+        max-width: 120px;
+        margin: 0 0 0 60px;
+    }
+    
+
+    .card-5{
+        grid-row: 1/3 ; 
+    }
+    .name5{
+        font-size: 15px;
+        max-width: 110px;
+        margin: 0 0 0 60px;
+    }
+    
+   
+}
